@@ -4,7 +4,7 @@ use 5.008000;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use B;
 use Storable;
@@ -179,8 +179,17 @@ Original version; created by h2xs 1.23 with options
 
   -A -C -X -b 5.8.0 -c -n Stupid::State
 
+=item 0.02
+
+PAUSE rejected the first one because it didn't like the permissions h2xs left for the
+automatically generated META.yml file so it wouldn't index it, but it also wouldn't let me
+delete it, so this version is actually identical to 0.01.
+
 =back
 
+=head1 BUGS
+
+What could possibily go wrong?
 
 =head1 SEE ALSO
 
