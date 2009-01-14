@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-State
-version:            0.02
+version:            0.03
 abstract:           Save application state on exit and restores state on startup
 author:
     - Scott Walters <scott@slowass.net>

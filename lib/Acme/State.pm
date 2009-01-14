@@ -4,11 +4,12 @@ use 5.008000;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use B;
 use Storable;
 use Devel::Caller 'caller_cv';
+use IO::Handle;
 
 my @stop_modules = (
     '1' .. '9', ':',
@@ -184,6 +185,10 @@ Original version; created by h2xs 1.23 with options
 PAUSE rejected the first one because it didn't like the permissions h2xs left for the
 automatically generated META.yml file so it wouldn't index it, but it also wouldn't let me
 delete it, so this version is actually identical to 0.01.
+
+=item 0.03
+
+Ooops, actually C<< use IO::Handle >>.  Not every program already does that for us.
 
 =back
 
